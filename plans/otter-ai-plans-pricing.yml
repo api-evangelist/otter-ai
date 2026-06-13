@@ -1,0 +1,84 @@
+name: Otter.ai Plans and Pricing
+description: Pricing tiers for the Otter.ai AI meeting transcription platform
+version: '0.1'
+url: https://otter.ai/pricing
+plans:
+  - name: Basic
+    description: >-
+      Free plan for individuals getting started with AI meeting transcription.
+      Includes core transcription features with monthly minute limits and
+      conversation length caps.
+    price: 0
+    currency: USD
+    billing_period: monthly
+    features:
+      - 300 transcription minutes per month
+      - 30-minute maximum meeting length
+      - 3 lifetime audio/video file imports
+      - 1 concurrent meeting
+      - Live transcription and speaker identification
+      - iOS and Android mobile apps
+      - Chrome extension
+      - Standard AI workflows
+  - name: Pro
+    description: >-
+      Individual plan with expanded transcription capacity, more file imports,
+      longer meeting limits, and advanced AI workflow capabilities. Billed monthly
+      or annually for savings.
+    price: 16.99
+    annual_price: 8.33
+    currency: USD
+    billing_period: monthly
+    features:
+      - 1,200 transcription minutes per month
+      - 90-minute maximum meeting length
+      - 10 monthly audio/video file imports
+      - 2 concurrent meetings
+      - Unlimited storage
+      - Advanced AI workflows
+      - Meeting templates
+      - Salesforce and HubSpot integration
+      - Advanced search and export
+      - Zapier integration
+  - name: Business
+    description: >-
+      Team plan with unlimited transcription, extended meeting length, multiple
+      concurrent meetings, and priority support. Best value for teams that meet
+      frequently. Billed per user per month.
+    price: 30.00
+    annual_price: 19.99
+    currency: USD
+    billing_period: monthly
+    unit: per user
+    features:
+      - Unlimited in-app transcription minutes
+      - 4-hour maximum meeting length
+      - Unlimited audio/video file imports
+      - 3 concurrent meetings per user
+      - 6,000 imported file minutes per month per user
+      - Custom AI workflows
+      - Admin controls and usage analytics
+      - Priority customer support
+      - SSO integration
+      - All Pro features included
+  - name: Enterprise
+    description: >-
+      Custom enterprise plan for large organizations requiring advanced security,
+      compliance, and API access. Includes dedicated API access, VPC deployment
+      options, zero data retention policies, and custom contracts. Enterprise API
+      access must be enabled through an Otter account manager.
+    price: custom
+    currency: USD
+    billing_period: annual
+    features:
+      - All Business plan features
+      - Public API access (Enterprise only)
+      - 500 API requests per minute rate limit
+      - Custom AI workflows and unlimited automation
+      - Domain verification and SSO (Okta/Azure AD)
+      - Zero Data Retention (ZDR) policy option
+      - Virtual Private Cloud (VPC) deployment option
+      - Dedicated account manager
+      - Custom integrations
+      - Advanced security and compliance controls
+      - Custom contracts (typically $15,000–$35,000/year)

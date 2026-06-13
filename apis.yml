@@ -1,0 +1,79 @@
+aid: otter-ai
+name: Otter.ai
+description: >-
+  Otter.ai is an AI-powered meeting transcription and conversational intelligence
+  platform that automatically records, transcribes, and summarizes meetings across
+  Zoom, Google Meet, Microsoft Teams, and other video conferencing services. The
+  platform provides a REST API for Enterprise customers to programmatically retrieve
+  speech-to-text transcripts, speaker-identified conversation segments, and
+  AI-generated meeting summaries. Developers can upload audio files, retrieve
+  processed transcripts via webhooks, and integrate meeting intelligence into their
+  own applications using bearer token authentication. Otter.ai also offers an MCP
+  Server integration enabling AI assistants like Claude and ChatGPT to query meeting
+  knowledge directly.
+type: Index
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/otter-ai/refs/heads/main/apis.yml
+created: '2026-06-13'
+modified: '2026-06-13'
+specificationVersion: '0.19'
+tags:
+  - AI
+  - Transcription
+  - Meeting Notes
+  - Speech-to-Text
+  - Speaker Identification
+  - Meeting Intelligence
+  - Summaries
+apis:
+  - aid: otter-ai:otter-ai-api
+    name: Otter.ai API
+    description: >-
+      The Otter.ai REST API enables Enterprise customers to programmatically upload
+      audio and video files for transcription, retrieve speaker-identified transcripts,
+      receive webhook notifications when speech processing completes, and integrate
+      meeting intelligence into custom applications. The API uses bearer token
+      authentication and supports Python, Node.js, and Java client libraries.
+    humanURL: https://otter.ai/api/docs/
+    baseURL: https://api.otter.ai
+    tags:
+      - Transcription
+      - Meeting Notes
+      - Speech-to-Text
+      - Speaker Identification
+      - Webhooks
+    properties:
+      - type: Documentation
+        url: https://otter.ai/api/docs/
+      - type: Plans
+        url: https://raw.githubusercontent.com/api-evangelist/otter-ai/refs/heads/main/plans/otter-ai-plans-pricing.yml
+      - type: RateLimits
+        url: https://raw.githubusercontent.com/api-evangelist/otter-ai/refs/heads/main/rate-limits/otter-ai-rate-limits.yml
+      - type: FinOps
+        url: https://raw.githubusercontent.com/api-evangelist/otter-ai/refs/heads/main/finops/otter-ai-finops.yml
+common:
+  - type: Website
+    url: https://otter.ai
+  - type: Documentation
+    url: https://otter.ai/api/docs/
+  - type: GitHubOrg
+    url: https://github.com/otter-framework
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/otter-ai
+  - type: Blog
+    url: https://otter.ai/blog
+  - type: Pricing
+    url: https://otter.ai/pricing
+  - type: StatusPage
+    url: https://status.otter.ai/
+  - type: X
+    url: https://x.com/otter_ai
+  - type: Plans
+    url: plans/otter-ai-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/otter-ai-rate-limits.yml
+  - type: FinOps
+    url: finops/otter-ai-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com

@@ -1,0 +1,121 @@
+name: Otter.ai FinOps Framework
+description: >-
+  FOCUS-aligned FinOps cost management guidance for Otter.ai API and platform
+  usage. Covers cost allocation, optimization strategies, and forecasting for
+  teams integrating Otter.ai's meeting transcription and AI meeting intelligence
+  capabilities into their operations.
+version: '1.0'
+framework: FinOps Framework FOCUS 1.0
+url: https://otter.ai/pricing
+cost_model:
+  type: subscription_plus_usage
+  description: >-
+    Otter.ai uses a per-seat subscription model with four tiers (Basic, Pro,
+    Business, Enterprise). API access is exclusive to Enterprise customers.
+    Usage is metered in transcription minutes for file imports and in-app
+    recording, with monthly caps enforced per plan tier.
+  billing_dimensions:
+    - name: Seats
+      description: Per-user monthly subscription fee
+      unit: user_per_month
+      plans:
+        - plan: Basic
+          price: 0.00
+          currency: USD
+        - plan: Pro (monthly)
+          price: 16.99
+          currency: USD
+        - plan: Pro (annual)
+          price: 8.33
+          currency: USD
+        - plan: Business (monthly)
+          price: 30.00
+          currency: USD
+        - plan: Business (annual)
+          price: 19.99
+          currency: USD
+        - plan: Enterprise
+          price: custom
+          currency: USD
+    - name: Transcription Minutes
+      description: >-
+        Usage-based transcription consumption measured in minutes per month.
+        Overages are enforced by hard limits per plan rather than overage charges
+        on most tiers; Enterprise contracts may include negotiated overage rates.
+      unit: minutes_per_month
+    - name: Audio/Video File Imports
+      description: Number of file imports per month for offline transcription
+      unit: imports_per_month
+    - name: API Calls (Enterprise)
+      description: >-
+        REST API call volume for Enterprise customers. Priced as part of
+        Enterprise contract; no separate per-call fee is publicly listed.
+        Pay-as-you-go API pricing at $0.02 per minute of audio transcribed
+        may be available under certain Enterprise agreements.
+      unit: requests_per_minute
+      rate: 0.02
+      rate_unit: per_audio_minute_transcribed
+cost_allocation:
+  recommended_tags:
+    - key: team
+      description: Allocate seats and API usage to the owning team or department
+    - key: project
+      description: Track transcription costs per project or initiative
+    - key: cost_center
+      description: Map seat licenses to finance cost centers for chargeback
+    - key: environment
+      description: Distinguish production API usage from development/test workloads
+  strategies:
+    - name: Seat-based allocation
+      description: >-
+        Assign each licensed seat to a cost center or department. Use Otter's
+        admin dashboard to audit active users and deactivate unused seats monthly.
+    - name: Workspace segmentation
+      description: >-
+        Use Otter workspaces to group meetings by team or project, enabling
+        usage visibility per organizational unit.
+    - name: API usage tracking
+      description: >-
+        Enterprise customers should instrument API call logging with team/project
+        metadata in request headers to enable granular cost allocation for
+        transcription API usage.
+optimization:
+  strategies:
+    - name: Right-size plan per user role
+      description: >-
+        Audit user meeting frequency and transcription needs. Assign Basic or Pro
+        seats to low-frequency users; reserve Business seats for power users with
+        daily meeting loads above 4 hours.
+    - name: Annual billing commitment
+      description: >-
+        Switch eligible users from monthly to annual billing to achieve up to 50%
+        savings on Pro seats ($16.99/mo to $8.33/mo) and ~33% on Business seats
+        ($30/mo to $19.99/mo).
+    - name: Deactivate idle seats
+      description: >-
+        Review the admin dashboard monthly. Deactivate or downgrade seats for
+        users who have not recorded a meeting in 30+ days.
+    - name: Prefer in-app recording over file imports
+      description: >-
+        File import minutes are counted against a separate cap on Business plans
+        (6,000/mo). For high-volume import workloads, negotiate import allowances
+        in Enterprise contracts rather than purchasing additional Business seats.
+    - name: API request batching
+      description: >-
+        Enterprise API consumers should batch transcript retrieval requests and
+        use webhook-driven polling instead of active polling to minimize
+        unnecessary API calls against the 500 req/min limit.
+forecasting:
+  guidance: >-
+    For subscription costs, forecast based on headcount growth using the per-seat
+    rates above. Enterprise contracts are typically annual with mid-four-figure
+    to five-figure total contract values ($15,000–$35,000/year average).
+    For API transcription usage, estimate average meeting duration per user
+    multiplied by meeting frequency, then apply the $0.02/minute rate for
+    Enterprise pay-as-you-go API agreements.
+  typical_enterprise_contract_range:
+    low: 15000
+    average: 17400
+    high: 35000
+    currency: USD
+    period: annual

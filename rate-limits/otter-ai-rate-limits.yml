@@ -1,0 +1,78 @@
+name: Otter.ai API Rate Limits
+description: >-
+  Rate limits for the Otter.ai REST API. The public API is available to Enterprise
+  plan customers only and requires enablement through an Otter account manager.
+  Rate limits are enforced per API key and vary by subscription tier. Exceeding
+  limits returns HTTP 429 Too Many Requests; exponential backoff is recommended.
+version: '0.1'
+url: https://otter.ai/api/docs/
+limits:
+  - name: Pro Plan API Rate Limit
+    description: Request rate limit for Pro tier API access
+    plan: Pro
+    requests: 60
+    period: minute
+    unit: requests_per_minute
+    error_code: 429
+    error_message: Too Many Requests
+    retry_strategy: exponential_backoff
+  - name: Enterprise Plan API Rate Limit
+    description: >-
+      Request rate limit for Enterprise tier API access. Enterprise customers
+      receive significantly higher throughput to support production workloads.
+    plan: Enterprise
+    requests: 500
+    period: minute
+    unit: requests_per_minute
+    error_code: 429
+    error_message: Too Many Requests
+    retry_strategy: exponential_backoff
+  - name: Basic Plan Transcription Limit
+    description: Monthly transcription minute cap for Basic (free) accounts
+    plan: Basic
+    limit: 300
+    unit: minutes_per_month
+    scope: transcription
+  - name: Pro Plan Transcription Limit
+    description: Monthly in-app transcription minute cap for Pro accounts
+    plan: Pro
+    limit: 1200
+    unit: minutes_per_month
+    scope: transcription
+  - name: Pro Plan File Import Limit
+    description: Monthly audio/video file import limit for Pro accounts
+    plan: Pro
+    limit: 10
+    unit: imports_per_month
+    scope: file_import
+  - name: Business Plan File Import Limit
+    description: Monthly imported file transcription minutes for Business accounts
+    plan: Business
+    limit: 6000
+    unit: minutes_per_month
+    scope: file_import
+  - name: Basic Plan Meeting Length
+    description: Maximum duration for a single transcribed conversation on Basic plan
+    plan: Basic
+    limit: 30
+    unit: minutes_per_meeting
+    scope: meeting_length
+  - name: Pro Plan Meeting Length
+    description: Maximum duration for a single transcribed conversation on Pro plan
+    plan: Pro
+    limit: 90
+    unit: minutes_per_meeting
+    scope: meeting_length
+  - name: Business Plan Meeting Length
+    description: Maximum duration for a single transcribed conversation on Business plan
+    plan: Business
+    limit: 240
+    unit: minutes_per_meeting
+    scope: meeting_length
+authentication:
+  type: Bearer Token
+  description: >-
+    API requests are authenticated using bearer tokens generated from the Otter
+    developer dashboard. Include the token in the Authorization header as
+    "Authorization: Bearer {API_KEY}". OAuth is also supported for Enterprise
+    SSO configurations.
