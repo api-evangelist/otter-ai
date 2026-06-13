@@ -1,0 +1,61 @@
+{
+  "@context": {
+    "@vocab": "https://schema.org/",
+    "otter": "https://otter.ai/vocab#",
+    "aid": "otter:aid",
+    "transcription": "otter:transcription",
+    "speakerIdentification": "otter:speakerIdentification",
+    "meetingSummary": "otter:meetingSummary",
+    "speechToText": "otter:speechToText",
+    "meetingIntelligence": "otter:meetingIntelligence",
+    "webhook": "otter:webhook",
+    "bearerToken": "otter:bearerToken",
+    "audioUpload": "otter:audioUpload",
+    "otterNote": "otter:otterNote",
+    "conversation": "otter:conversation",
+    "speaker": "otter:speaker",
+    "utterance": "otter:utterance",
+    "segment": "otter:segment"
+  },
+  "@type": "SoftwareApplication",
+  "name": "Otter.ai",
+  "description": "AI-powered meeting transcription and conversational intelligence platform that automatically records, transcribes, and summarizes meetings.",
+  "url": "https://otter.ai",
+  "applicationCategory": "BusinessApplication",
+  "featureList": [
+    "Meeting transcription",
+    "Speaker identification",
+    "AI-generated meeting summaries",
+    "Audio file upload and processing",
+    "Webhook notifications",
+    "Zoom integration",
+    "Google Meet integration",
+    "Microsoft Teams integration",
+    "MCP Server integration"
+  ],
+  "offers": {
+    "@type": "Offer",
+    "url": "https://otter.ai/pricing"
+  },
+  "provider": {
+    "@type": "Organization",
+    "name": "Otter.ai",
+    "url": "https://otter.ai",
+    "sameAs": [
+      "https://x.com/otter_ai",
+      "https://www.linkedin.com/company/otter-ai",
+      "https://github.com/otter-framework"
+    ]
+  },
+  "API": {
+    "@type": "WebAPI",
+    "name": "Otter.ai API",
+    "description": "REST API for Enterprise customers to programmatically retrieve speech-to-text transcripts, speaker-identified conversation segments, and AI-generated meeting summaries.",
+    "documentation": "https://otter.ai/api/docs/",
+    "endpointURL": "https://api.otter.ai",
+    "termsOfService": "https://otter.ai/terms",
+    "otter:authenticationMethod": "bearerToken",
+    "otter:supportsWebhooks": true,
+    "otter:clientLibraries": ["Python", "Node.js", "Java"]
+  }
+}

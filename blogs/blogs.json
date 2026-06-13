@@ -1,0 +1,15 @@
+{
+  "aid": "otter-ai",
+  "name": "Otter.ai Blog",
+  "description": "Blog content from Otter.ai covering AI-powered meeting transcription, conversational intelligence, and productivity topics.",
+  "url": "https://otter.ai/blog",
+  "rss": null,
+  "rssConfirmed": false,
+  "rssProbed": [
+    "https://otter.ai/blog/rss",
+    "https://otter.ai/blog/feed"
+  ],
+  "notes": "No public RSS feed found as of 2026-06-13. Blog is available at https://otter.ai/blog but does not expose an RSS or Atom feed endpoint.",
+  "lastChecked": "2026-06-13",
+  "posts": []
+}
