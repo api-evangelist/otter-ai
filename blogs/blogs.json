@@ -11,5 +11,17 @@
   ],
   "notes": "No public RSS feed found as of 2026-06-13. Blog is available at https://otter.ai/blog but does not expose an RSS or Atom feed endpoint.",
   "lastChecked": "2026-06-13",
-  "posts": []
+  "posts": [],
+  "repo": "otter-ai",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/otter-ai",
+      "feed_url": "https://www.linkedin.com/company/otter-ai",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0,
+  "fetched": "2026-06-14T20:42:17Z"
 }
