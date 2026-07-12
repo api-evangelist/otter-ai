@@ -52,6 +52,10 @@ apis:
       - type: FinOps
         url: https://raw.githubusercontent.com/api-evangelist/otter-ai/refs/heads/main/finops/otter-ai-finops.yml
 common:
+  - type: TrustCenter
+    url: security/otter-ai-trust-center.yml
+  - type: DomainSecurity
+    url: security/otter-ai-domain-security.yml
   - type: Website
     url: https://otter.ai
   - type: Documentation
