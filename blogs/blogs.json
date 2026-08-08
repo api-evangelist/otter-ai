@@ -20,13 +20,10 @@
   "feeds": [
     {
       "source": "https://www.linkedin.com/company/otter-ai",
-      "feed_url": "https://www.linkedin.com/company/otter-ai",
-      "title": "",
-      "saved": 0,
-      "method": "none"
+      "error": "HTTPError"
     }
   ],
   "post_count": 4,
-  "fetched": "2026-08-01T15:49:00Z",
+  "fetched": "2026-08-06T14:08:46Z",
   "agent_pulled": "2026-07-04"
 }
