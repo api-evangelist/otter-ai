@@ -30,6 +30,14 @@ created: '2026-06-13'
 modified: '2026-06-13'
 specificationVersion: '0.23'
 tags:
+  - Artificial Intelligence
+  - Transcription
+  - Meeting Notes
+  - Speech-to-Text
+  - Speaker Identification
+  - Meeting Intelligence
+  - Summary
+tags_raw:
   - AI
   - Transcription
   - Meeting Notes
@@ -49,6 +57,12 @@ apis:
     humanURL: https://otter.ai/api/docs/
     baseURL: https://api.otter.ai
     tags:
+      - Transcription
+      - Meeting Notes
+      - Speech-to-Text
+      - Speaker Identification
+      - Webhook
+    tags_raw:
       - Transcription
       - Meeting Notes
       - Speech-to-Text
