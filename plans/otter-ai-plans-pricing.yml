@@ -86,3 +86,39 @@ plans:
       - Custom integrations
       - Advanced security and compliance controls
       - Custom contracts (typically $15,000–$35,000/year)
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  - negotiated
+  - seat
+  - subscription
+  units:
+  - seat
+  plans:
+  - name: Basic
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods: []
+  - name: Pro
+    access: other
+    model: subscription
+    model_how: derived
+    units: []
+    periods: []
+  - name: Business
+    access: other
+    model: seat
+    model_how: derived
+    units:
+    - seat
+    periods: []
+  - name: Enterprise
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
