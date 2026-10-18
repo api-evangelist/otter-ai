@@ -41,3 +41,29 @@
     builder: unknown (not in the directory record)
   status: not-a-workflow
   arazzo: null
+- slug: otter-ai-slack-own
+  label: Slack (own)
+  partner: slack
+  partner_name: Slack (own)
+  category: Slack app
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://slack.com/marketplace/A04ULDS8UFN-otterai-ai-meeting-assistant
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
+- slug: otter-ai-zoom-own
+  label: Zoom (own)
+  partner: zoom
+  partner_name: Zoom (own)
+  category: Zoom app
+  type: marketplace
+  marketplace: own
+  channel: partner-built
+  evidence: https://marketplace.zoom.us/apps/MmQJIMXUTYiCdPX5anvKVw
+  source: edge
+  relationship: platform-app
+  status: not-a-workflow
+  arazzo: null
