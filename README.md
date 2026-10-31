@@ -1,4 +1,4 @@
-# Otter.ai (otter-ai)
+# Otter.ai
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,48 +66,118 @@
 
 Otter.ai is an AI-powered meeting transcription and conversational intelligence platform that automatically records, transcribes, and summarizes meetings across Zoom, Google Meet, Microsoft Teams, and other video conferencing services. The platform provides a REST API for Enterprise customers to programmatically retrieve speech-to-text transcripts, speaker-identified conversation segments, and AI-generated meeting summaries. Developers can upload audio files, retrieve processed transcripts via webhooks, and integrate meeting intelligence into their own applications using bearer token authentication. Otter.ai also offers an MCP Server integration enabling AI assistants like Claude and ChatGPT to query meeting knowledge directly.
 
-APIs.json: https://raw.githubusercontent.com/api-evangelist/otter-ai/refs/heads/main/apis.yml
+**Areas:** Artificial Intelligence · Transcription · Meeting Notes · Speech-to-Text · Speaker Identification · Meeting Intelligence · Summary
 
-Naftiko: https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=otter-ai-api-evangelist&utm_content=repo
+## Otter.ai on APIs.io
 
-## Tags
+Everything profiled for Otter.ai is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/otter-ai/](https://apis.io/providers/otter-ai/)** — or go straight to one of the APIs or properties below.
 
-- AI
-- Transcription
-- Meeting Notes
-- Speech-to-Text
-- Speaker Identification
-- Meeting Intelligence
-- Summaries
+### APIs (1)
 
-## APIs
+- [Otter.ai API](https://apis.io/apis/otter-ai/otter-ai-api/) — The Otter.ai REST API enables Enterprise customers to programmatically upload audio and video files for transcription, retrieve speaker-identified…
 
-- **Otter.ai API** — REST API for Enterprise customers to upload audio/video files, retrieve speaker-identified transcripts, and receive webhook notifications on speech processing completion. Uses bearer token authentication. Docs: https://otter.ai/api/docs/
+### Published properties
 
-## Plans, Rate Limits, and FinOps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Plans/Pricing**: [plans/otter-ai-plans-pricing.yml](plans/otter-ai-plans-pricing.yml) — Four tiers: Basic (free), Pro ($8.33–$16.99/user/mo), Business ($19.99–$30/user/mo), Enterprise (custom). API access is Enterprise only.
-- **Rate Limits**: [rate-limits/otter-ai-rate-limits.yml](rate-limits/otter-ai-rate-limits.yml) — Pro: 60 req/min; Enterprise: 500 req/min. Transcription minute caps vary per plan.
-- **FinOps**: [finops/otter-ai-finops.yml](finops/otter-ai-finops.yml) — FOCUS-aligned cost allocation, optimization, and forecasting guidance for Otter.ai seat and API spend.
+#### MCP servers (1)
 
-## Timestamps
+Model Context Protocol servers that expose the API to agents.
 
-- Created: 2026-06-13
-- Modified: 2026-06-13
+- [otter-ai](https://apis.io/servers/otter-ai/otter-ai/)
 
-## Common
+#### JSON-LD (1)
 
-| Type | URL |
-|------|-----|
-| Website | https://otter.ai |
-| Documentation | https://otter.ai/api/docs/ |
-| GitHub Org | https://github.com/otter-framework |
-| LinkedIn | https://www.linkedin.com/company/otter-ai |
-| Blog | https://otter.ai/blog |
-| Pricing | https://otter.ai/pricing |
-| Status Page | https://status.otter.ai/ |
-| X | https://x.com/otter_ai |
+Linked-data contexts for the provider's vocabulary.
 
-## Maintainers
+- [Otter Ai Context](https://apis.io/jsonld/otter-ai/otter-ai-context/)
 
-- **Kin Lane** — kin@apievangelist.com
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Otter Ai Domain Security](https://apis.io/security/otter-ai/otter-ai-domain-security/)
+- [Otter Ai Trust Center](https://apis.io/security/otter-ai/otter-ai-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Otter Ai Plans Pricing](https://apis.io/plans/otter-ai/otter-ai-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Otter Ai Rate Limits](https://apis.io/rate-limits/otter-ai/otter-ai-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Otter Ai Finops](https://apis.io/finops/otter-ai/otter-ai-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://otter.ai)
+- [Documentation](https://otter.ai/api/docs/)
+- [Pricing](https://otter.ai/pricing)
+- [Blog](https://otter.ai/blog)
+- [Status](https://status.otter.ai/)
+
+## API Evangelist rating
+
+**Kin Score 18.9** — emerging · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 68.3 |
+| Contract quality | 10.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 26.3 |
+
+**Agent readiness 14.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 14.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/otter-ai/](https://apis.io/providers/otter-ai/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Otter.ai: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/otter-ai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
